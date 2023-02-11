@@ -11,7 +11,7 @@ function SendMail() {
     function (response) {
       inputContainer.style.boxShadow = "none";
       inputContainer.style.background = "none";
-      inputContainer.innerHTML = `<p class="success-message"><span class="success-span">Congratulations!</span> You will be notified when we launch!</p>`;
+      inputContainer.innerHTML = `<p class="success-message"><span class="success-span">Congratulations!</span> You will be notified when we launch</p>`;
     },
     function (error) {
       console.log("FAILED...", error);
