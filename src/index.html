@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daobase</title>
+    <link type="text/css" rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("URw4Htwjv292TkxZU");
+      })();
+    </script>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="header">
+        <div class="header-item">
+          <img
+            src="../assets/DaobaseIcon.png"
+            class="header-icon"
+            alt="daobase logo"
+          />
+          <h3 class="header-brand">Daobase</h3>
+        </div>
+      </header>
+      <section class="main">
+        <div class="main-text-wrap">
+          <div class="main-text-container">
+            <h1 class="main-text">Put your DAO in the spotlight!</h1>
+            <h2 class="main-sub-text">
+              Grow your community by leveraging Daobase, a network of the most
+              prominent and cutting edge DAO’s available
+            </h2>
+          </div>
+          <div class="eth-icon-wrap">
+            <img
+              class="eth-icon"
+              alt="ethereum icon"
+              src="../assets/EthIcon.svg"
+            />
+          </div>
+
+          <img
+            class="gradient-1"
+            alt="gradient"
+            src="../assets/Gradient1.svg"
+          />
+        </div>
+
+        <div class="main-input-wrap">
+          <div class="main-input-container">
+            <input
+              name="main-input"
+              type="email"
+              class="main-input"
+              id="senderEmail"
+              placeholder="Enter your email"
+            />
+            <button onclick="SendMail()" class="main-button">Join</button>
+          </div>
+          <p class="privacy-text">
+            We care about your data in our
+            <span class="privacy-span">privacy policy</span>.
+          </p>
+          <img
+            class="gradient-2"
+            alt="gradient"
+            src="../assets/Gradient2.svg"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

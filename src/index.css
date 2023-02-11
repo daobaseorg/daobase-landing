@@ -1,0 +1,187 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #373737;
+}
+
+body {
+  background-color: white;
+  color: #373737;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 3% 15%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.header-icon {
+  width: 2rem;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  padding: 10% 0;
+  row-gap: 4rem;
+}
+
+.main-text-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main-text {
+  font-size: 4rem;
+  z-index: 2;
+  font-weight: 900;
+}
+
+.main-sub-text {
+  z-index: 2;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.main-input-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  position: relative;
+  align-items: flex-start;
+}
+
+.main-input-container {
+  z-index: 2;
+  background: #ffffff;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.gradient-1 {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 10%;
+  z-index: 1;
+  left: 0;
+}
+
+.gradient-2 {
+  position: absolute;
+  top: 20%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 500px;
+  z-index: 1;
+  left: 0;
+}
+
+.eth-icon {
+  position: absolute;
+  height: 700px;
+}
+
+.main-input {
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  z-index: 2;
+}
+
+.main-input:active {
+  border: none;
+  outline: none;
+}
+
+.main-input:focus {
+  border: none;
+  outline: none;
+}
+
+.main-text-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.main-button {
+  z-index: 2;
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 0 10px 10px 0;
+  background-color: #3c5bff;
+  color: white;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+}
+
+.main-button:hover {
+  background-color: #5572ff;
+}
+
+.privacy-text {
+  z-index: 2;
+}
+
+.privacy-span {
+  text-decoration: underline;
+}
+
+.eth-icon-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.success-message {
+  background: none;
+  font-size: 1.5rem;
+}
+
+.success-span {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
