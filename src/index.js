@@ -1,11 +1,12 @@
 const inputContainer = document.querySelector(".main-input-container");
-
+const emailInput = document.getElementById("senderEmail");
 function SendMail() {
+  if (emailInput.value.length < 3 || !emailInput.value.includes("@")) {
+    return;
+  }
   var templateParams = {
-    sender_email: document.getElementById("senderEmail").value,
+    sender_email: emailInput.value,
   };
-
-  console.log(templateParams);
 
   emailjs.send("service_c1r5od5", "template_2ovtlqp", templateParams).then(
     function (response) {
