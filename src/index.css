@@ -188,3 +188,10 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
 }
+
+.main-link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+}
